@@ -26,6 +26,23 @@ export default function App() {
     } else {
       console.error("Result element not found");
     }
+
+    const gradeElement = document.getElementById("grade");
+    if (percentage >= 90) {
+      gradeElement.innerHTML = 'A*'
+    } else if (percentage >= 80) {
+      gradeElement.innerHTML = 'A'
+    } else if (percentage >= 70) {
+      gradeElement.innerHTML = 'B'
+    } else if (percentage >= 60) {
+      gradeElement.innerHTML  = 'C'
+    } else if (percentage >= 50) {
+      gradeElement.innerHTML = 'D'
+    } else if (percentage < 50) {
+      gradeElement.innerHTML = 'F'
+    } else {
+      gradeElement.innerHTML = "Grade not found";
+    }
   }
 
   return (
@@ -40,6 +57,7 @@ export default function App() {
         <p>
           Your score is: <span id="result"></span>%
         </p>
+        <p>Your grade is: <span id="grade"></span></p>
       </div>
     </>
   );
