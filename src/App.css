@@ -1,0 +1,44 @@
+body {
+  font-family: monospace;
+  font-size: 2rem;
+  text-align: center;
+  background: rgb(209,206,206);
+  background: linear-gradient(90deg, rgba(209,206,206,1) 0%, rgba(147,147,147,1) 61%);
+  color: black;
+}
+
+input {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: #;
+  font-size: 1.5rem;
+  margin: 10px;
+  text-align: center;
+}
+
+input:focus {
+  box-shadow: 0 0 5px 2px #bababa;
+}
+
+button {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  font-family: inherit;
+  font-size: 1.5rem;
+  transition: .5s;
+}
+
+button:hover {
+  box-shadow: 0 0 5px 2px #bababa;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+}
